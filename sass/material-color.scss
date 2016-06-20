@@ -1,0 +1,37 @@
+//======================
+// Main File to generate color classes
+//======================
+
+@import "partials/variables";
+@import "partials/colors";
+
+/*!
+ * Material color Version: 1.1.0
+ * Author: Vaibhav Khedekar (http://vebport.com)
+ */
+
+@each $color in $colors {
+	
+	.#{$prefix}-#{$txt}-#{nth($color, 1)}{
+		color: #{nth($color, 2)};
+	}
+	a{
+		&.#{$prefix}-#{$txt}-#{nth($color, 1)}{
+			&:hover, &:active{
+				color: #{nth($color, 2)};
+			}
+		}
+	}
+	
+	.#{$prefix}-#{$bg}-#{nth($color, 1)}{
+		background-color: #{nth($color, 2)};
+	}
+	a{
+		&.#{$prefix}-#{$bg}-#{nth($color, 1)}{
+			&:hover, &:active{
+				background-color: #{nth($color, 2)};
+			}
+		}
+	}
+	
+}
