@@ -1,0 +1,18 @@
+{
+  "name": "material-color-palette",
+  "description": "Material Design colors by Google. Available to Designer as well as Coders.",
+  "main": "./css/material-color.css",
+  "authors": [
+    "vaibhav khedekar"
+  ],
+  "license": "MIT",
+  "keywords": [
+    "material",
+    "color",
+    "google",
+    "design",
+    "flat",
+    "ui"
+  ],
+  "homepage": "https://github.com/codeVeb/material-color"
+}
